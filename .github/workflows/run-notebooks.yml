@@ -25,7 +25,7 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install --requirement requirements.txt
                 pip install jupyter
-            - run: cd src/chapters; jupyter nbconvert --execute chap01.ipynb
-            - run: cd src/chapters; jupyter nbconvert --execute chap02.ipynb
-            - run: cd src/chapters; jupyter nbconvert --execute chap03.ipynb
-            - run: cd src/chapters; jupyter nbconvert --execute chap04.ipynb
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap01.ipynb
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap02.ipynb
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap03.ipynb
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap04.ipynb
