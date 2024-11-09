@@ -1,33 +1,30 @@
 name: build
 concurrency:
-  group: build-${{ github.ref }}
-  cancel-in-progress: true
+    group: build-${{ github.ref }}
+    cancel-in-progress: true
 on: 
-  push:
-    paths-ignore:
-      - '**/*.md'    
-  workflow_dispatch:
+    push:
+        paths-ignore:
+        - '**/*.md'    
+    workflow_dispatch:
 jobs:
-  build-python:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
-        chapter: ['chap01.ipynb', 'chap02.ipynb', 'chap03.ipynb', ]
-        # 'chap04.ipynb', 'chap05.ipynb', 
-        #            'chap06.ipynb', 'chap07.ipynb', 'chap08.ipynb', 'chap09.ipynb', 'chap10.ipynb',
-        #            'chap11.ipynb', 'chap12.ipynb', 'chap13.ipynb', 'chap14.ipynb', 'chap15.ipynb',
-        #            'chap16.ipynb', 'chap17.ipynb', 'chap18.ipynb', 'chap19.ipynb', 'chap20.ipynb',
-        #            'chap21.ipynb', 'chap22.ipynb', 'chap23.ipynb',]
-    name: Python ${{ matrix.python-version }} ${{ matrix.chapter }}
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install --requirement requirements.txt
-      - run: cd src/chapters; python ${{ matrix.chapter }}
+    build-python:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+            name: Python ${{ matrix.python-version }}
+            steps:
+            - uses: actions/checkout@v4
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                    python-version: ${{ matrix.python-version }}
+            - name: Install dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install --requirement requirements.txt
+            - run: cd src/chapters; python chap01.ipynb
+            - run: cd src/chapters; python chap02.ipynb
+            - run: cd src/chapters; python chap03.ipynb
+            - run: cd src/chapters; python chap04.ipynb
