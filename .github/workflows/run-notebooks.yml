@@ -30,4 +30,4 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install --requirement requirements.txt
-      - run: cd src; python ${{ matrix.chapter }}
+      - run: cd src/chapters; python ${{ matrix.chapter }}
