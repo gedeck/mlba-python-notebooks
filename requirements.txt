@@ -1,5 +1,11 @@
 pandas
 scikit-learn
 matplotlib
+seaborn
+plotly
+adjustText
+networkx
+
+nbformat
 
 mlba
