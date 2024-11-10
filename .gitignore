@@ -1,0 +1,4 @@
+src/chapters/*.py
+delete
+src/chapters/glove.6B.zip
+src/chapters/transformer_model.joblib
