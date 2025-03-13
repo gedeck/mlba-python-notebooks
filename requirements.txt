@@ -1,5 +1,4 @@
-# change when mlxtend is updated
-numpy<2
+numpy
 pandas
 scikit-learn
 statsmodels

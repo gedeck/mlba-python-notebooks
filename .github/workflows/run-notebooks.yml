@@ -35,7 +35,6 @@ jobs:
             - run: cd src/chapters; jupyter nbconvert --to python chap08.ipynb; ipython chap08.py
             - run: cd src/chapters; jupyter nbconvert --to python chap09.ipynb; ipython chap09.py
             - run: cd src/chapters; jupyter nbconvert --to python chap10.ipynb; ipython chap10.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap11.ipynb; ipython chap11.py
             - run: cd src/chapters; jupyter nbconvert --to python chap12.ipynb; ipython chap12.py
             - run: cd src/chapters; jupyter nbconvert --to python chap13.ipynb; ipython chap13.py
             - run: cd src/chapters; jupyter nbconvert --to python chap14.ipynb; ipython chap14.py
@@ -48,4 +47,5 @@ jobs:
             - run: cd src/chapters; jupyter nbconvert --to python chap21.ipynb; ipython chap21.py
             - run: cd src/chapters; jupyter nbconvert --to python chap22.ipynb; ipython chap22.py
             - run: cd src/chapters; jupyter nbconvert --to python chap23.ipynb; ipython chap23.py
+            - run: cd src/chapters; jupyter nbconvert --to python chap11.ipynb; ipython chap11.py
 
