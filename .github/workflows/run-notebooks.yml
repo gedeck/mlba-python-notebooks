@@ -25,21 +25,20 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install --requirement requirements.txt
                 pip install jupyter "Ipython<9"
-            - run: cd src/chapters; jupyter nbconvert --to notebook --execute chap13.ipynb
-            - run: cd src/chapters; jupyter nbconvert --to python chap01.ipynb; ipython chap01.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap02.ipynb; ipython chap02.py
-            - run: cd src/chapters; jupyter nbconvert --to python --execute chap03.ipynb
-            - run: cd src/chapters; jupyter nbconvert --to python chap04.ipynb; ipython chap04.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap05.ipynb; ipython chap05.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap06.ipynb; ipython chap06.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap07.ipynb; ipython chap07.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap08.ipynb; ipython chap08.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap09.ipynb; ipython chap09.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap10.ipynb; ipython chap10.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap12.ipynb; ipython chap12.py
-            - run: cd src/chapters; jupyter nbconvert --to python --execute chap13.ipynb
-            - run: cd src/chapters; jupyter nbconvert --to python chap14.ipynb; ipython chap14.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap15.ipynb; ipython chap15.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap01.ipynb; ipython chap01.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap02.ipynb; ipython chap02.py
+            # - run: cd src/chapters; jupyter nbconvert --to python --execute chap03.ipynb
+            # - run: cd src/chapters; jupyter nbconvert --to python chap04.ipynb; ipython chap04.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap05.ipynb; ipython chap05.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap06.ipynb; ipython chap06.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap07.ipynb; ipython chap07.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap08.ipynb; ipython chap08.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap09.ipynb; ipython chap09.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap10.ipynb; ipython chap10.py
+            # - run: cd src/chapters; jupyter nbconvert --to python chap12.ipynb; ipython chap12.py
+            # - run: cd src/chapters; jupyter nbconvert --to python --execute chap13.ipynb
+            # - run: cd src/chapters; jupyter nbconvert --to python chap14.ipynb; ipython chap14.py
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap15.ipynb
             - run: cd src/chapters; jupyter nbconvert --to python chap16.ipynb; ipython chap16.py
             - run: cd src/chapters; jupyter nbconvert --to python chap17.ipynb; ipython chap17.py
             - run: cd src/chapters; jupyter nbconvert --to python chap18.ipynb; ipython chap18.py
