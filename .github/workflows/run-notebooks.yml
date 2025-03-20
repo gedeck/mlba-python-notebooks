@@ -40,12 +40,13 @@ jobs:
             # - run: cd src/chapters; jupyter nbconvert --to python chap14.ipynb; ipython chap14.py
             - run: cd src/chapters; jupyter nbconvert --to python chap16.ipynb; ipython chap16.py
             - run: cd src/chapters; jupyter nbconvert --to python chap17.ipynb; ipython chap17.py
-            - run: cd src/chapters; jupyter nbconvert --to python chap18.ipynb; ipython chap18.py
             - run: cd src/chapters; jupyter nbconvert --to python chap19.ipynb; ipython chap19.py
             - run: cd src/chapters; jupyter nbconvert --to python chap20.ipynb; ipython chap20.py
             - run: cd src/chapters; jupyter nbconvert --to python chap21.ipynb; ipython chap21.py
             - run: cd src/chapters; jupyter nbconvert --to python chap22.ipynb; ipython chap22.py
             - run: cd src/chapters; jupyter nbconvert --to python chap23.ipynb; ipython chap23.py
             - run: cd src/chapters; jupyter nbconvert --to python chap11.ipynb; ipython chap11.py
+
             # - run: cd src/chapters; jupyter nbconvert --to python --execute chap15.ipynb
+            # - run: cd src/chapters; jupyter nbconvert --to python chap18.ipynb; ipython chap18.py
 
