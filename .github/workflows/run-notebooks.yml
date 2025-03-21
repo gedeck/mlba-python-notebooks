@@ -25,6 +25,10 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install --requirement requirements.txt
                 pip install jupyter "Ipython<9"
+            # currently failing
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap15.ipynb
+            - run: cd src/chapters; jupyter nbconvert --to python --execute chap18.ipynb
+            # working
             - run: cd src/chapters; jupyter nbconvert --to python --execute chap01.ipynb
             - run: cd src/chapters; jupyter nbconvert --to python --execute chap02.ipynb
             - run: cd src/chapters; jupyter nbconvert --to python --execute chap03.ipynb
@@ -47,6 +51,3 @@ jobs:
             - run: cd src/chapters; jupyter nbconvert --to python --execute chap23.ipynb
             # slow notebooks
             - run: cd src/chapters; jupyter nbconvert --to python --execute chap11.ipynb
-            # currently failing
-            # - run: cd src/chapters; jupyter nbconvert --to python --execute chap15.ipynb
-            # - run: cd src/chapters; jupyter nbconvert --to python --execute chap18.ipynb
