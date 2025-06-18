@@ -1,0 +1,56 @@
+---
+---
+@import "{{ site.theme }}";
+
+$color-footer: #f2f2f2;
+$color-title: white;
+$font-grey: #1b5074;
+$color-1: #a3262a;
+$color-2: #cf252a;
+$color-github-link: #a3262a;
+
+
+table {
+    border: 0px;
+}
+
+td {
+    border: 0px;
+    vertical-align: top;
+}
+
+.inner {
+    max-width: 800px;
+}
+
+body {
+    color: $font-grey;
+    background: $color-1;
+}
+
+footer p, footer a {
+    color: $font-grey;
+}
+
+#header_wrap {
+    background-image: url(../../img/mlba-python-background.png);
+    background-size: 100% auto;
+    background-position-y: bottom;
+
+    a {
+        color: $font-grey;
+    }
+}
+
+#project_title, #project_tagline, #project_subtitle {
+    color: $color-title;
+    text-shadow: none;
+}
+
+#main_content_wrap {
+    color: black;
+}
+
+#footer_wrap {
+    background: $color-footer;
+}
