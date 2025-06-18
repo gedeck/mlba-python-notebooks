@@ -17,6 +17,8 @@
 </tr>
 </table>
 
+The repository contains Jupyter notebooks with the Python source code for each chapter in the book.
+
 
 ## Package dependencies
 All required packages are listed in the file `requirements.txt`. You can install it using 
