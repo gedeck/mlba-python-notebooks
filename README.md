@@ -17,7 +17,7 @@
 </tr>
 </table>
 
-The repository contains Jupyter notebooks with the Python source code for each chapter in the book.
+The [repository](https://github.com/gedeck/mlba-python-notebooks) contains Jupyter notebooks with the Python source code for each chapter in the book.
 
 
 ## Package dependencies
