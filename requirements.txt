@@ -1,6 +1,6 @@
 scipy<1.16
+numpy<2
 
-numpy
 pandas
 scikit-learn
 statsmodels
