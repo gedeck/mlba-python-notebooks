@@ -17,7 +17,7 @@ keras
 tensorflow
 h2o
 lime
-surprise
+scikit-surprise
 sktime
 pmdarima
 nltk
